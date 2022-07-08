@@ -30,35 +30,62 @@ hr {
 
 /*==================== HEADER  ===================*/
 
-a {
-  color: var(--clr-dark);
+.nav-list a {
   text-decoration: none;
+  color: var(--clr-dark);
+  transform: 2ms ease-in;
+  font-family: var(--ff-primary);
+  font-size: 20px;
+
+}
+
+.nav-list a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 1.4px;
+  background-color: var(--clr-dark);
+  transition: all 1.5s ease;
+}
+
+.nav-list a:hover:before {
+  width: 100%;
 }
 
 .logo {
   font-size: 24px;
   letter-spacing: 4px;
+  text-decoration: none;
+  color: var(--clr-dark);
+ 
 }
 
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: var(--ff-primary);
   background: var(--main-color);
+  font-family: var(--ff-primary);
   height: 9vh;
+  z-index: 1000;
+
+ 
 }
 
 .nav-list {
   list-style: none;
   display: flex;
+
 }
 
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
-  font-size: 20px;
 }
+
 
 .mobile-menu {
   cursor: pointer;
@@ -97,18 +124,17 @@ nav {
 }
 
 /*==================== main  ===================*/
-
 .intro {
   font-size: 2.8rem;
   font-weight: 700;
   text-align: center;
   font-family: var(--ff-primary);
-  padding: 20px 0;
+ 
 }
 
 .btn {
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 
 .btn button {
@@ -193,8 +219,9 @@ nav {
 /*==================== responsivo  ===================*/
 /*############## HEADER ##############*/
 @media (max-width: 999px) {
-  body {
+  html, body {
     overflow-x: hidden;
+    position: relative;
   }
   .nav-list {
     position: absolute;
@@ -233,6 +260,7 @@ nav {
   
   .intro {
     font-size: 5rem;
+    
   }
 
   .btn button {

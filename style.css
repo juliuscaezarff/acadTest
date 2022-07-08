@@ -20,7 +20,12 @@ span {
   color: var(--main-color);
 }
 
+
+
+
+
 /*==================== HEADER  ===================*/
+
 
 .nav-list a {
   text-decoration: none;
@@ -28,6 +33,7 @@ span {
   transform: 2ms ease-in;
   font-family: var(--ff-primary);
   font-size: 20px;
+ 
 }
 
 .nav-list a:before {
@@ -50,6 +56,7 @@ span {
   letter-spacing: 4px;
   text-decoration: none;
   color: var(--clr-dark);
+  
 }
 
 nav {
@@ -60,17 +67,23 @@ nav {
   background: var(--main-color);
   font-family: var(--ff-primary);
   height: 9vh;
+  z-index: 1000;
+
+ 
 }
 
 .nav-list {
   list-style: none;
   display: flex;
+
 }
 
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
 }
+
+
 
 .mobile-menu {
   display: none;
@@ -468,6 +481,13 @@ nav {
 
 @media screen and (min-width: 960px) {
   /*############## HEADER ##############*/
+
+  html, body{
+    overflow-x: hidden;
+    position: relative;
+  }
+
+
   .main-content {
     display: flex;
     justify-content: center;
