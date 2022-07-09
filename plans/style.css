@@ -38,7 +38,7 @@ hr {
   transform: 2ms ease-in;
   font-family: var(--ff-primary);
   font-size: 20px;
-  position: relative;
+
 }
 
 .nav-list a:before {
@@ -61,7 +61,7 @@ hr {
   letter-spacing: 4px;
   text-decoration: none;
   color: var(--clr-dark);
-  position: relative;
+ 
 }
 
 nav {
@@ -73,7 +73,7 @@ nav {
   font-family: var(--ff-primary);
   height: 9vh;
   z-index: 1000;
-position: fixed;
+
  
 }
 
@@ -126,54 +126,16 @@ position: fixed;
 
 
 
-/*==================== Main  ===================*/
-
-.main-content {
-  display: flex;
-  align-items: center;
-  height: 45vh;
-  justify-content: center;
-}
-
-.primary-text {
-  display: flex;
-  gap: 0.8rem;
-  font-size: 3rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*==================== responsivo  ===================*/
 /*############## HEADER ##############*/
 @media (max-width: 999px) {
-  body {
+  html, body {
     overflow-x: hidden;
+    position: relative;
   }
   .nav-list {
     position: absolute;
-    top: 7vh;
+    top: 8vh;
     right: 0;
     width: 100vw;
     height: 92vh;

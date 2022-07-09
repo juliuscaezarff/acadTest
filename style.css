@@ -33,7 +33,7 @@ span {
   transform: 2ms ease-in;
   font-family: var(--ff-primary);
   font-size: 20px;
- 
+
 }
 
 .nav-list a:before {
@@ -56,7 +56,7 @@ span {
   letter-spacing: 4px;
   text-decoration: none;
   color: var(--clr-dark);
-  
+ 
 }
 
 nav {
@@ -82,6 +82,7 @@ nav {
   letter-spacing: 3px;
   margin-left: 32px;
 }
+
 
 
 
@@ -448,6 +449,10 @@ nav {
 
 /*############## HEADER ##############*/
 @media (max-width: 999px) {
+  html, body {
+    overflow-x: hidden;
+    position: relative;
+  }
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -482,10 +487,7 @@ nav {
 @media screen and (min-width: 960px) {
   /*############## HEADER ##############*/
 
-  html, body{
-    overflow-x: hidden;
-    position: relative;
-  }
+
 
 
   .main-content {
