@@ -28,9 +28,7 @@ hr {
   background: rgb(231, 130, 22);
 }
 
-
 /*==================== HEADER  ===================*/
-
 
 .nav-list a {
   text-decoration: none;
@@ -38,7 +36,6 @@ hr {
   transform: 2ms ease-in;
   font-family: var(--ff-primary);
   font-size: 20px;
-
 }
 
 .nav-list a:before {
@@ -61,7 +58,6 @@ hr {
   letter-spacing: 4px;
   text-decoration: none;
   color: var(--clr-dark);
- 
 }
 
 nav {
@@ -73,14 +69,11 @@ nav {
   font-family: var(--ff-primary);
   height: 9vh;
   z-index: 1000;
-
- 
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-
 }
 
 .nav-list li {
@@ -124,18 +117,165 @@ nav {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+/*==================== MAIN  ===================*/
+
+.intro {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.intro-text {
+  font-size: 2.8rem;
+}
+
+.intro-information {
+  font-size: 1.9rem;
+}
+
+.intro-information2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+/*==================== CARDS  ===================*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card 
+{
+ position: relative;
+ width: 350px;
+ height: 190px;
+ margin-top: 10rem;
+ background: var(--main-color);
+ border-radius: 20px;
+ box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+ transition: 0.5s;
+}
+
+.card:hover
+{
+ height: 450px;
+}
+
+.img-box {
+ position: absolute;
+ left: 50%;
+ top: -50px;
+ transform: translateX(-50%);
+ width: 150px;
+ height: 150px;
+ background: var(--clr-white);
+ border-radius: 20px;
+ box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+ overflow: hidden;
+ transition: 0.5s;
+}
+
+.card:hover  .img-box {
+ width: 250px;
+ height: 250px;
+}
+
+.img-box  img {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.card .content {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ overflow: hidden;
+} 
+
+.card .content .details {
+ padding: 40px;
+ text-align: center;
+ width: 100%;
+ line-height: 2.7rem;
+ transition: 0.5s;
+ transform: translateY(150px);
+}
+
+.card:hover .content .details{
+ transform: translateY(0px);
+}
+
+.card .content .details h2 {
+ font-size: 1.6rem;
+ font-weight: 600;
+ color: #000;
+ line-height: 1.2rem;
+}
+
+
+
+.card .content .details h3 {
+  font-size: 1.3rem;
+  margin-top: 1.8rem;
+}
+
+.card .content .details .btn {
+ margin-top: 1rem;
+
+}
+
+.card .content .details .btn button {
+height: 2.9rem;
+width: 10rem;
+cursor: pointer;
+background: transparent;
+border-radius: 20px;
+border: 1px solid black;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*==================== responsivo  ===================*/
 /*############## HEADER ##############*/
 @media (max-width: 999px) {
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
-    position: relative;
   }
+
   .nav-list {
     position: absolute;
-    top: 8vh;
+    top: 7vh;
     right: 0;
     width: 100vw;
     height: 92vh;
@@ -161,10 +301,3 @@ nav {
 .nav-list.active {
   transform: translateX(0);
 }
-
-
-
-
-
-
-

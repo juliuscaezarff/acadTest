@@ -129,12 +129,13 @@ nav {
   font-weight: 700;
   text-align: center;
   font-family: var(--ff-primary);
+  margin-top: 6rem;
  
 }
 
 .btn {
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .btn button {
