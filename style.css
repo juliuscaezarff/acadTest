@@ -302,6 +302,7 @@ nav {
 
 .box-plan {
   background: var(--clr-dark);
+  border-radius: 0 5rem;
   color: var(--clr-white);
   height: 75rem;
   margin-top: 4rem;
@@ -583,6 +584,7 @@ nav {
   /*############## CARDS PLAN ##############*/
   .box-plan {
     height: 85rem;
+    border-radius: 0 25rem;
   }
 
   .cards {
