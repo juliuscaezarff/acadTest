@@ -133,6 +133,13 @@ nav {
 }
 
 /*############## INPUT ##############*/
+input {
+  height: 2.6rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+
+
 .search {
  display: flex;
  flex-direction: column;
